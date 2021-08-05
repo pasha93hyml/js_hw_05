@@ -5,10 +5,10 @@ class Car {
     );
   }
 
-  constructor(carParams) {
+  constructor({price, maxSpeed}) {
     this.speed = 0;
-    this._price = carParams.price;
-    this.maxSpeed = carParams.maxSpeed;
+    this._price = price;
+    this.maxSpeed = maxSpeed;
     this.isOn = false;
     this.distance = 0;
   }

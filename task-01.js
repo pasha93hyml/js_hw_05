@@ -1,6 +1,6 @@
-function Account(obj) {
-  this.login = obj.login;
-  this.email = obj.email;
+function Account({login, email}) {
+  this.login = login;
+  this.email = email;
 }
 
 Account.prototype.getInfo = function () {
@@ -12,7 +12,6 @@ const mango = new Account({
   email: "mango@dog.woof",
 });
 
-console.log(mango);
 mango.getInfo(); // Login: Mangozedog, Email: mango@dog.woof
 const poly = new Account({
   login: "Poly",
